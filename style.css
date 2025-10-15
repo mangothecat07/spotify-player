@@ -8,6 +8,45 @@ html{
     overflow: hidden;
     user-select:none;
 }
+.slider {
+    -webkit-appearance: none; /* Remove default styling for WebKit browsers */
+    appearance: none;
+    width: 100%; /* Full width */
+    height: 5px; /* Height of the slider track */
+    background: #1db954; /* Green track color */
+    outline: none; /* Remove outline */
+    border-radius: 5px; /* Rounded track corners */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default thumb styling */
+    appearance: none;
+    width: 15px; /* Thumb width */
+    height: 15px; /* Thumb height */
+    background: #ffffff; /* White thumb color */
+    border: 2px solid #1db954; /* Green border around the thumb */
+    border-radius: 50%; /* Circular thumb */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border: 2px solid #1db954;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .slider::-ms-thumb {
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border: 2px solid #1db954;
+    border-radius: 50%;
+    cursor: pointer;
+  }
 body{
     margin:0px;
     padding:0px;
