@@ -40,112 +40,16 @@
           </p>
         </div>
         <hr class="hr2">
-        <div class="list" style="overflow-y: hidden;">
-          <div id="song1">
-            <img src="https://i.scdn.co/image/ab67616d0000b273b492477206075438e0751176" alt="#">
-            <p>After Dark</p>
-            <a>Mr. Kitty</a>
-          </div>
-      
-          <div id="song2">
-            <img src="https://i.scdn.co/image/ab67616d0000b273af1993f4424f2030a6258206" alt="#">
-            <p>The Real Punk Rock</p>
-            <a>John Murphy</a>
-          </div>
-      
-          <div id="song3">
-            <img src="https://i.scdn.co/image/ab67616d0000b273c027ad28821777b00dcaa888" alt="#">
-            <p>All The Stars</p>
-            <a>Kendrick Lamar, SZA</a>
-          </div>
-      
-          <div id="song4">
-            <img src="https://i.scdn.co/image/ab67616d0000b2734d08fc99eff4ed52dfce91fa" alt="#">
-            <p>The Winner Takes It All</p>
-            <a>ABBA</a>
-          </div>
-      
-          <div id="song5">
-            <img src="https://i.scdn.co/image/ab67616d00001e0261450a1da36bd66c2ab79030" alt="#">
-            <p>I Want You</p>
-            <a>Savage Garden</a>
-          </div>
+        <div id="spotify-player" >
+          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/62mHHokydgeU16c1s9IiHR?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
-        <hr class="hr3">
-        <div class="play" id="player">
-          <img src="https://i.scdn.co/image/ab67616d0000b27353c8776d91b0794bc66dfd9b" alt="#22">
-          <div class="container">
-            <p class="songName">Out of time</p>
-            <a class="name">Harley Reid, líue</a>
-            <div>
-              <p>2:16</p>
-              <span></span>
-              <p>3:31</p>
-            </div>
-            <div class="controls">
-              <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0 gSLhUO"><path d="M13 2.5L5 7.119V3H3v10h2V8.881l8 4.619z"></path></svg>
-              <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0 gSLhUO play-btn"><path d="M4.018 14L14.41 8 4.018 2z"></path></svg>
-              <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0 gSLhUO"><path d="M11 3v4.119L3 2.5v11l8-4.619V13h2V3z" ></path></svg>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      <script>
-        /*set onclick listener to the song ids*/
-        /*then set the player info to the clicked song info*/
-        const songs = [
-          {
-            id: "song1",
-            img: "https://i.scdn.co/image/ab67616d0000b273b492477206075438e0751176",
-            songName: "After Dark",
-            artist: "Mr. Kitty",
-            duration: "4:20",
-            passed: "2:16"
-          },
-          {
-            id: "song2",
-            img: "https://i.scdn.co/image/ab67616d0000b273af1993f4424f2030a6258206",
-            songName: "The Real Punk Rock",
-            artist: "John Murphy",
-            duration: "6:00",
-            passed: "3:30"
-          },
-          {
-            id: "song3",
-            img: "https://i.scdn.co/image/ab67616d0000b273c027ad28821777b00dcaa888",
-            songName: "All The Stars",
-            artist: "Kendrick Lamar, SZA",
-            duration: "3:55",
-            passed: "1:45"
-          },
-          {
-            id: "song4",
-            img: "https://i.scdn.co/image/ab67616d0000b2734d08fc99eff4ed52dfce91fa",
-            songName: "The Winner Takes It All",
-            artist: "ABBA",
-            duration: "4:55",
-            passed: "2:30"
-          },
-          {
-            id: "song5",
-            img: "https://i.scdn.co/image/ab67616d00001e0261450a1da36bd66c2ab79030",
-            songName: "I Want You",
-            artist: "Savage Garden",
-            duration: "3:39",
-            passed: "1:50"
-          }
-        ];
-        songs.forEach(song => {
-          document.getElementById(song.id).onclick = function() {
-            document.querySelector("#player img").src = song.img;
-            document.querySelector("#player .songName").innerText = song.songName;
-            document.querySelector("#player .name").innerText = song.artist;
-            document.querySelector("#player .container div p:first-child").innerText = song.passed;
-            document.querySelector("#player .container div p:last-child").innerText = song.duration;
-          }
-        });
         
-      </script>
+   
+        </div>
+       
+    
+</nav>
+      
+      
 </body>
 </html>
